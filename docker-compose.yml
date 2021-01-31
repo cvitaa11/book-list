@@ -6,7 +6,7 @@ services:
     ports:
       - "4000:4000"
   frontend:    
-    image: "dmurphy1217/twitter-sentiment-frontend"
+    image: "cvitaa11/book-list-react:1.0"
     ports:
       - "81:80"
     links:
