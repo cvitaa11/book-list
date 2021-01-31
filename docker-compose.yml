@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  backend:       
+    image: "cvitaa11/book-list-node:1.0"
+    ports:
+      - "4000:4000"
+  frontend:    
+    image: "dmurphy1217/twitter-sentiment-frontend"
+    ports:
+      - "81:80"
+    links:
+      - "backend:be"
